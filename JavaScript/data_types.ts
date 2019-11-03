@@ -1,4 +1,4 @@
-// * Arrays
+// * Arrays * //
 // To initialize an array, all values must be of the same type.
 const carMakers: string[] = ['ford', 'toyota', 'mitsubishi'];
 
@@ -7,10 +7,22 @@ const carsByMake: string[][] = [['f150'], ['rav4'], ['lancer']];
 
 // Multi-Typed Arrays
 const importantDates: (Date | string)[] = [new Date(), '10-14-1991'];
+// ** //
+
+// * Objects * //
+const newObj: {
+    name: string,
+    age: number,
+    likesPizza: boolean
+} = {
+    name: 'MacGruber',
+    age: 4,
+    likesPizza: true,
+};
+// ** //
 
 
-
-// * Tuples
+// * Tuples * //
 // Here we'll be converting a regular object to a Tuple
 const drink = {
     name: 'Coke Zero',
@@ -25,3 +37,4 @@ const cokeZeroTuple: [string, string, Boolean, number] = ['Coke Zero', 'brown', 
 // Type Alias Syntax
 type Drink = [string, string, Boolean, number];
 const mountainDewTuple: Drink = ['Mountain Dew', 'green', true, 100000];
+// ** //
